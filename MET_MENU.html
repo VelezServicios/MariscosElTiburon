@@ -1,335 +1,357 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Menú - Mariscos El Tiburón</title>
-<style>
-* {
-box-sizing: border-box;
-}
-body {
-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-background-color: #ffffff;
-color: #1a252c;
-margin: 0;
-padding: 15px;
-display: flex;
-justify-content: center;
-}
-.menu-container {
-width: 100%;
-max-width: 500px;
-background-color: #ffffff;
-}
-.header {
-text-align: center;
-border-bottom: 2px solid #4267B2;
-padding-bottom: 15px;
-margin-bottom: 25px;
-}
-.logo img {
-max-width: 240px;
-height: auto;
-margin-bottom: 5px;
-}
-.category {
-margin-bottom: 25px;
-}
-.category-header {
-display: flex;
-align-items: center;
-border-bottom: 2px solid #87ceeb;
-padding-bottom: 6px;
-margin-bottom: 12px;
-}
-.category-icon {
-font-size: 22px;
-margin-right: 10px;
-}
-.category-title {
-color: #4267B2;
-font-size: 20px;
-font-weight: bold;
-margin: 0;
-text-transform: uppercase;
-}
-.dish-item {
-display: flex;
-justify-content: space-between;
-align-items: baseline;
-margin-bottom: 10px;
-padding-bottom: 4px;
-border-bottom: 1px dotted #e0e0e0;
-}
-.dish-info {
-flex-grow: 1;
-padding-right: 12px;
-}
-.dish-name {
-font-size: 15px;
-font-weight: bold;
-color: #2c3e50;
-}
-.dish-desc {
-font-size: 12px;
-color: #666;
-margin-top: 2px;
-}
-.dish-price {
-font-size: 15px;
-font-weight: bold;
-color: #000;
-white-space: nowrap;
-}
-.coctel-prices {
-display: flex;
-gap: 10px;
-font-size: 13px;
-color: #444;
-}
-.coctel-prices span b {
-color: #4267B2;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - Mariscos El Tiburón</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #ffffff;
+            color: #1a252c;
+            margin: 0;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+        }
+        .menu-container {
+            width: 100%;
+            max-width: 500px;
+            background-color: #ffffff;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #4267B2;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        .logo img {
+            max-width: 240px;
+            height: auto;
+            margin-bottom: 5px;
+        }
+        .subtitle {
+            font-size: 1.1em;
+            color: #555;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: bold;
+        }
+        .category {
+            margin-bottom: 25px;
+        }
+        .category-header {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid #87ceeb;
+            padding-bottom: 6px;
+            margin-bottom: 12px;
+        }
+        .category-icon {
+            font-size: 22px;
+            margin-right: 10px;
+        }
+        .category-title {
+            color: #4267B2;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .dish-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 10px;
+            padding-bottom: 4px;
+            border-bottom: 1px dotted #e0e0e0;
+        }
+        .dish-info {
+            flex-grow: 1;
+            padding-right: 12px;
+        }
+        .dish-name {
+            font-size: 15px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .dish-desc {
+            font-size: 12px;
+            color: #666;
+            margin-top: 2px;
+        }
+        .dish-price {
+            font-size: 15px;
+            font-weight: bold;
+            color: #000;
+            white-space: nowrap;
+        }
+        .coctel-prices {
+            display: flex;
+            gap: 10px;
+            font-size: 13px;
+            color: #444;
+        }
+        .coctel-prices span b {
+            color: #4267B2;
+        }
+    </style>
 </head>
 <body>
+
 <div class="menu-container">
-<div class="header">
-<div class="logo">
-<img src="MET_LOGO.png" alt="Logo Mariscos El Tiburón">
+    
+    <div class="header">
+        <div class="logo">
+            <img src="MET_LOGO.png" alt="Logo Mariscos El Tiburón">
+        </div>
+        <div class="subtitle">MENÚ</div>
+    </div>
+
+    <!-- ESPECIALIDADES -->
+    <div class="category">
+        <div class="category-header">
+            <span class="category-icon">🥘</span>
+            <h2 class="category-title">Especialidades</h2>
+        </div>
+        <div class="dish-item">
+            <div class="dish-info"><div class="dish-name">Mixiote de Mariscos</div></div>
+            <div class="dish-price">$220</div>
+        </div>
+        <div class="dish-item">
+            <div class="dish-info"><div class="dish-name">Alambre de Mariscos</div></div>
+            <div class="dish-price">$200</div>
+        </div>
+        <div class="dish-item">
+            <div class="dish-info"><div class="dish-name">Filete Empanizado</div></div>
+            <div class="dish-price">$200</div>
+        </div>
+    </div>
+
+    <!-- ENTRADAS -->
+    <div class="category">
+        <div class="category-header">
+            <span class="category-icon">🥟</span>
+            <h2 class="category-title">Entradas</h2>
+        </div>
+        <div class="dish-item">
+            <div class="dish-info"><div class="dish-name">Pescadillas orden de (3)</div></div>
+            <div class="dish-price">$50</div>
+        </div>
+        <div class="dish-item">
+            <div class="dish-info"><div class="dish-name">Pescadito solo (1) pza.</div></div>
+            <div class="dish-price">$30</div>
+        </div>
+        <div class="dish-item">
+            <div class="dish-info">
+                <div class="dish-name">Pescado preparado</div>
+                <div class="dish-desc">Cilantro, cebolla y aguacate</div>
+            </div>
+            <div class="dish-price">$30</div>
+        </div>
+        <div class="dish-item">
+            <div class="dish-info"><div class="dish-name">Consomé de camarón</div></div>
+            <div class="dish-price">$40</div>
+        </div>
+    </div>
+
+    <!-- CAMARONES -->
+    <div class="category">
+        <div class="category-header">
+            <span class="category-icon">🦐</span>
+            <h2 class="category-title">Camarones</h2>
+        </div>
+        <div class="dish-item">
+            <div class="dish-info"><div class="dish-name">Empanizados</div></div>
+            <div class="dish-price">$220</div>
+        </div>
+        <div class="dish-item">
+            <div class="dish-info"><div class="dish-name">A la Diabla</div></div>
+            <div class="dish-price">$220</div>
+        </div>
+        <div class="dish-item">
+            <div class="dish-info"><div class="dish-name">Al mojo de ajo</div></div>
+            <div class="dish-price">$220</div>
+        </div>
+    </div>
+
+    <!-- COCTELES -->
+    <div class="category">
+        <div class="category-header">
+            <span class="category-icon">🍹</span>
+            <h2 class="category-title">Cocteles</h2>
+        </div>
+        <div class="dish-item">
+            <div class="dish-info"><div class="dish-name">Camarón</div></div>
+            <div class="coctel-prices">
+                <span>CH <b>$70</b></span>
+                <span>MED <b>$130</b></span>
+                <span>GDE <b>$190</b></span>
+            </div>
+        </div>
+        <div class="dish-item">
+            <div class="dish-info"><div class="dish-name">Pulpo</div></div>
+            <div class="coctel-prices">
+                <span>CH <b>$70</b></span>
+                <span>MED <b>$130</b></span>
+                <span>GDE <b>$190</b></span>
+            </div>
+        </div>
+        <div class="dish-item">
+            <div class="dish-info"><div class="dish-name">Ostión</div></div>
+            <div class="coctel-prices">
+                <span>CH <b>$70</b></span>
+                <span>MED <b>$130</b></span>
+                <span>GDE <b>$190</b></span>
+            </div>
+        </div>
+        <div class="dish-item">
+            <div class="dish-info"><div class="dish-name">Campechano</div></div>
+            <div class="coctel-prices">
+                <span>CH <b>$70</b></span>
+                <span>MED <b>$130</b></span>
+                <span>GDE <b>$190</b></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- MOJARRAS -->
+    <div class="category">
+        <div class="category-header">
+            <span class="category-icon">🐟</span>
+            <h2 class="category-title">Mojarras</h2>
+        </div>
+        <div class="dish-item">
+            <div class="dish-info"><div class="dish-name">Frita</div></div>
+            <div class="dish-price">S/T</div>
+        </div>
+        <div class="dish-item">
+            <div class="dish-info"><div class="dish-name">Al mojo de ajo</div></div>
+            <div class="dish-price">S/T</div>
+        </div>
+    </div>
+
+    <!-- TOSTADAS -->
+    <div class="category">
+        <div class="category-header">
+            <span class="category-icon">🌮</span>
+            <h2 class="category-title">Tostadas</h2>
+        </div>
+        <div class="dish-item">
+            <div class="dish-info"><div class="dish-name">Camarón natural</div></div>
+            <div class="dish-price">$70</div>
+        </div>
+        <div class="dish-item">
+            <div class="dish-info"><div class="dish-name">Pulpo natural</div></div>
+            <div class="dish-price">$70</div>
+        </div>
+        <div class="dish-item">
+            <div class="dish-info"><div class="dish-name">Campechana</div></div>
+            <div class="dish-price">$70</div>
+        </div>
+        <div class="dish-item">
+            <div class="dish-info"><div class="dish-name">Ensalada de Camaron</div></div>
+            <div class="dish-price">$65</div>
+        </div>
+        <div class="dish-item">
+            <div class="dish-info"><div class="dish-name">Ceviche de Pescado</div></div>
+            <div class="dish-price">$65</div>
+        </div>
+        <div class="dish-item">
+            <div class="dish-info"><div class="dish-name">Ceviche de Pulpo</div></div>
+            <div class="dish-price">$65</div>
+        </div>
+    </div>
+
+    <!-- CALDOS -->
+    <div class="category">
+        <div class="category-header">
+            <span class="category-icon">🍲</span>
+            <h2 class="category-title">Caldos</h2>
+        </div>
+        <div class="dish-item">
+            <div class="dish-info"><div class="dish-name">Camarón de cascara</div></div>
+            <div class="dish-price">$100</div>
+        </div>
+        <div class="dish-item">
+            <div class="dish-info"><div class="dish-name">Camarón pelado</div></div>
+            <div class="dish-price">$110</div>
+        </div>
+        <div class="dish-item">
+            <div class="dish-info"><div class="dish-name">Pescado</div></div>
+            <div class="dish-price">$100</div>
+        </div>
+        <div class="dish-item">
+            <div class="dish-info"><div class="dish-name">Sopa de Mariscos</div></div>
+            <div class="dish-price">$190</div>
+        </div>
+        <div class="dish-item">
+            <div class="dish-info"><div class="dish-name">Camarón y Pescado</div></div>
+            <div class="dish-price">$120</div>
+        </div>
+    </div>
+
+    <!-- EMPANADAS -->
+    <div class="category">
+        <div class="category-header">
+            <span class="category-icon">🥟</span>
+            <h2 class="category-title">Empanadas</h2>
+        </div>
+        <div class="dish-item">
+            <div class="dish-info"><div class="dish-name">Camarón natural</div></div>
+            <div class="dish-price">$70</div>
+        </div>
+        <div class="dish-item">
+            <div class="dish-info"><div class="dish-name">Pulpo natural</div></div>
+            <div class="dish-price">$70</div>
+        </div>
+        <div class="dish-item">
+            <div class="dish-info"><div class="dish-name">Campechana</div></div>
+            <div class="dish-price">$70</div>
+        </div>
+        <div class="dish-item">
+            <div class="dish-info"><div class="dish-name">Ensalada de Camaron</div></div>
+            <div class="dish-price">$65</div>
+        </div>
+        <div class="dish-item">
+            <div class="dish-info"><div class="dish-name">Ceviche de Pescado</div></div>
+            <div class="dish-price">$65</div>
+        </div>
+        <div class="dish-item">
+            <div class="dish-info"><div class="dish-name">Ceviche de Pulpo</div></div>
+            <div class="dish-price">$65</div>
+        </div>
+    </div>
+
+    <!-- BEBIDAS -->
+    <div class="category">
+        <div class="category-header">
+            <span class="category-icon">🍾</span>
+            <h2 class="category-title">Bebidas</h2>
+        </div>
+        <div class="dish-item">
+            <div class="dish-info"><div class="dish-name">Refresco</div></div>
+            <div class="dish-price">$30</div>
+        </div>
+        <div class="dish-item">
+            <div class="dish-info"><div class="dish-name">Agua del dia</div></div>
+            <div class="dish-price">$40</div>
+        </div>
+        <div class="dish-item">
+            <div class="dish-info"><div class="dish-name">Agua mineral preparada</div></div>
+            <div class="dish-price">$40</div>
+        </div>
+        <div class="dish-item">
+            <div class="dish-info"><div class="dish-name">Sangria preparada</div></div>
+            <div class="dish-price">$40</div>
+        </div>
+    </div>
+
 </div>
-</div>
-<!-- ESPECIALIDADES -->
-<div class="category">
-<div class="category-header">
-<span class="category-icon">🥘</span>
-<h2 class="category-title">Especialidades</h2>
-</div>
-<div class="dish-item">
-<div class="dish-info"><div class="dish-name">MIXIOTE DE MARISCOS</div></div>
-<div class="dish-price">$ 220</div>
-</div>
-<div class="dish-item">
-<div class="dish-info"><div class="dish-name">ALAMBRE DE MARISCOS</div></div>
-<div class="dish-price">$ 200</div>
-</div>
-<div class="dish-item">
-<div class="dish-info"><div class="dish-name">FILETE EMPANIZADO</div></div>
-<div class="dish-price">$ 200</div>
-</div>
-</div>
-<!-- ENTRADAS -->
-<div class="category">
-<div class="category-header">
-<span class="category-icon">🥟</span>
-<h2 class="category-title">Entradas</h2>
-</div>
-<div class="dish-item">
-<div class="dish-info"><div class="dish-name">Pescadillas orden de (3)</div></div>
-<div class="dish-price">$ 50</div>
-</div>
-<div class="dish-item">
-<div class="dish-info"><div class="dish-name">Pescadito solo (1) pza.</div></div>
-<div class="dish-price">$ 30</div>
-</div>
-<div class="dish-item">
-<div class="dish-info">
-<div class="dish-name">Pescado preparado</div>
-<div class="dish-desc">(cilantro, cebolla y aguacate)</div>
-</div>
-<div class="dish-price">$ 30</div>
-</div>
-<div class="dish-item">
-<div class="dish-info"><div class="dish-name">Consomé de camarón</div></div>
-<div class="dish-price">$ 40</div>
-</div>
-</div>
-<!-- CAMARONES -->
-<div class="category">
-<div class="category-header">
-<span class="category-icon">🦐</span>
-<h2 class="category-title">Camarones</h2>
-</div>
-<div class="dish-item">
-<div class="dish-info"><div class="dish-name">Empanizados</div></div>
-<div class="dish-price">$ 220</div>
-</div>
-<div class="dish-item">
-<div class="dish-info"><div class="dish-name">A la Diabla</div></div>
-<div class="dish-price">$ 220</div>
-</div>
-<div class="dish-item">
-<div class="dish-info"><div class="dish-name">Al mojo de ajo</div></div>
-<div class="dish-price">$ 220</div>
-</div>
-</div>
-<!-- COCTELES -->
-<div class="category">
-<div class="category-header">
-<span class="category-icon">🍹</span>
-<h2 class="category-title">Cocteles</h2>
-</div>
-<div class="dish-item">
-<div class="dish-info"><div class="dish-name">Camarón</div></div>
-<div class="coctel-prices">
-<span>CH <b>$ 70</b></span>
-<span>MED <b>$ 130</b></span>
-<span>GDE <b>$ 190</b></span>
-</div>
-</div>
-<div class="dish-item">
-<div class="dish-info"><div class="dish-name">Pulpo</div></div>
-<div class="coctel-prices">
-<span>CH <b>$ 70</b></span>
-<span>MED <b>$ 130</b></span>
-<span>GDE <b>$ 190</b></span>
-</div>
-</div>
-<div class="dish-item">
-<div class="dish-info"><div class="dish-name">Ostión</div></div>
-<div class="coctel-prices">
-<span>CH <b>$ 70</b></span>
-<span>MED <b>$ 130</b></span>
-<span>GDE <b>$ 190</b></span>
-</div>
-</div>
-<div class="dish-item">
-<div class="dish-info"><div class="dish-name">Campechano</div></div>
-<div class="coctel-prices">
-<span>CH <b>$ 70</b></span>
-<span>MED <b>$ 130</b></span>
-<span>GDE <b>$ 190</b></span>
-</div>
-</div>
-</div>
-<!-- MOJARRAS -->
-<div class="category">
-<div class="category-header">
-<span class="category-icon">🐟</span>
-<h2 class="category-title">Mojarras</h2>
-</div>
-<div class="dish-item">
-<div class="dish-info"><div class="dish-name">Frita</div></div>
-<div class="dish-price">$ S/T</div>
-</div>
-<div class="dish-item">
-<div class="dish-info"><div class="dish-name">Al mojo de ajo</div></div>
-<div class="dish-price"></div>
-</div>
-</div>
-<!-- TOSTADAS -->
-<div class="category">
-<div class="category-header">
-<span class="category-icon">🌮</span>
-<h2 class="category-title">Tostadas</h2>
-</div>
-<div class="dish-item">
-<div class="dish-info"><div class="dish-name">Camarón natural</div></div>
-<div class="dish-price">$ 70</div>
-</div>
-<div class="dish-item">
-<div class="dish-info"><div class="dish-name">Pulpo natural</div></div>
-<div class="dish-price">$ 70</div>
-</div>
-<div class="dish-item">
-<div class="dish-info"><div class="dish-name">Campechana</div></div>
-<div class="dish-price">$ 70</div>
-</div>
-<div class="dish-item">
-<div class="dish-info"><div class="dish-name">Ensalada de Camaron</div></div>
-<div class="dish-price">$ 65</div>
-</div>
-<div class="dish-item">
-<div class="dish-info"><div class="dish-name">Ceviche de Pescado</div></div>
-<div class="dish-price">$ 65</div>
-</div>
-<div class="dish-item">
-<div class="dish-info"><div class="dish-name">Ceviche de Pulpo</div></div>
-<div class="dish-price">$ 65</div>
-</div>
-</div>
-<!-- CALDOS -->
-<div class="category">
-<div class="category-header">
-<span class="category-icon">🍲</span>
-<h2 class="category-title">Caldos</h2>
-</div>
-<div class="dish-item">
-<div class="dish-info"><div class="dish-name">Camarón de cascara</div></div>
-<div class="dish-price">$ 100</div>
-</div>
-<div class="dish-item">
-<div class="dish-info"><div class="dish-name">Camarón pelado</div></div>
-<div class="dish-price">$ 110</div>
-</div>
-<div class="dish-item">
-<div class="dish-info"><div class="dish-name">Pescado</div></div>
-<div class="dish-price">$ 100</div>
-</div>
-<div class="dish-item">
-<div class="dish-info"><div class="dish-name">Sopa de Mariscos</div></div>
-<div class="dish-price">$ 190</div>
-</div>
-<div class="dish-item">
-<div class="dish-info"><div class="dish-name">Camarón y Pescado</div></div>
-<div class="dish-price">$ 120</div>
-</div>
-</div>
-<!-- EMPANADAS -->
-<div class="category">
-<div class="category-header">
-<span class="category-icon">🥟</span>
-<h2 class="category-title">Empanadas</h2>
-</div>
-<div class="dish-item">
-<div class="dish-info"><div class="dish-name">Camarón natural</div></div>
-<div class="dish-price">$ 70</div>
-</div>
-<div class="dish-item">
-<div class="dish-info"><div class="dish-name">Pulpo natural</div></div>
-<div class="dish-price">$ 70</div>
-</div>
-<div class="dish-item">
-<div class="dish-info"><div class="dish-name">Campechana</div></div>
-<div class="dish-price">$ 70</div>
-</div>
-<div class="dish-item">
-<div class="dish-info"><div class="dish-name">Ensalada de Camaron</div></div>
-<div class="dish-price">$ 65</div>
-</div>
-<div class="dish-item">
-<div class="dish-info"><div class="dish-name">Ceviche de Pescado</div></div>
-<div class="dish-price">$ 65</div>
-</div>
-<div class="dish-item">
-<div class="dish-info"><div class="dish-name">Ceviche de Pulpo</div></div>
-<div class="dish-price">$ 65</div>
-</div>
-</div>
-<!-- BEBIDAS -->
-<div class="category">
-<div class="category-header">
-<span class="category-icon">🍾</span>
-<h2 class="category-title">Bebidas</h2>
-</div>
-<div class="dish-item">
-<div class="dish-info"><div class="dish-name">Refresco</div></div>
-<div class="dish-price">$ 30</div>
-</div>
-<div class="dish-item">
-<div class="dish-info"><div class="dish-name">Agua del dia</div></div>
-<div class="dish-price">$ 40</div>
-</div>
-<div class="dish-item">
-<div class="dish-info"><div class="dish-name">Agua mineral preparada</div></div>
-<div class="dish-price">$ 40</div>
-</div>
-<div class="dish-item">
-<div class="dish-info"><div class="dish-name">Sangria preparada</div></div>
-<div class="dish-price">$ 40</div>
-</div>
-</div>
-</div>
+
 </body>
 </html>

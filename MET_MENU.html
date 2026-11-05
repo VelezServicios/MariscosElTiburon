@@ -1,387 +1,335 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú - Mariscos El Tiburón</title>
-    <style>
-        body {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            margin: 0;
-            padding: 10px;
-            background-color: #f4f4f9;
-            color: #333;
-            font-size: 14px;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: #fff;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        .logo {
-            text-align: center;
-            margin-bottom: 15px;
-        }
-        .logo img {
-            max-width: 250px;
-            height: auto;
-        }
-        h1 {
-            text-align: center;
-            color: #1a252c;
-            margin-bottom: 5px;
-            font-size: 20px;
-        }
-        h2 {
-            background-color: #4267B2;
-            color: white;
-            padding: 8px;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            border-radius: 4px;
-            font-size: 16px;
-            text-align: center;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-            font-size: 12px;
-        }
-        th, td {
-            padding: 8px;
-            text-align: left;
-            border: 1px solid #4267B2;
-            word-wrap: break-word;
-            overflow-wrap: break-word;
-        }
-        th {
-            background-color: #87ceeb;
-            color: white;
-            font-size: 13px;
-        }
-        td:last-child, th:last-child {
-            text-align: right;
-            width: 25%;
-        }
-        .price {
-            font-weight: bold;
-            color: #000;
-        }
-        .locations-box {
-            background-color: #eef2f8;
-            border: 1px solid #4267B2;
-            padding: 12px;
-            border-radius: 4px;
-            margin-top: 20px;
-        }
-        .locations-box h3 {
-            margin-top: 0;
-            color: #1a252c;
-            font-size: 15px;
-            text-align: center;
-        }
-        .locations-box p {
-            margin: 6px 0;
-            font-size: 12px;
-        }
-        .footer-note {
-            text-align: center;
-            font-size: 0.8em;
-            color: #666;
-            margin-top: 20px;
-            font-style: italic;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menú - Mariscos El Tiburón</title>
+<style>
+* {
+box-sizing: border-box;
+}
+body {
+font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+background-color: #ffffff;
+color: #1a252c;
+margin: 0;
+padding: 15px;
+display: flex;
+justify-content: center;
+}
+.menu-container {
+width: 100%;
+max-width: 500px;
+background-color: #ffffff;
+}
+.header {
+text-align: center;
+border-bottom: 2px solid #4267B2;
+padding-bottom: 15px;
+margin-bottom: 25px;
+}
+.logo img {
+max-width: 240px;
+height: auto;
+margin-bottom: 5px;
+}
+.category {
+margin-bottom: 25px;
+}
+.category-header {
+display: flex;
+align-items: center;
+border-bottom: 2px solid #87ceeb;
+padding-bottom: 6px;
+margin-bottom: 12px;
+}
+.category-icon {
+font-size: 22px;
+margin-right: 10px;
+}
+.category-title {
+color: #4267B2;
+font-size: 20px;
+font-weight: bold;
+margin: 0;
+text-transform: uppercase;
+}
+.dish-item {
+display: flex;
+justify-content: space-between;
+align-items: baseline;
+margin-bottom: 10px;
+padding-bottom: 4px;
+border-bottom: 1px dotted #e0e0e0;
+}
+.dish-info {
+flex-grow: 1;
+padding-right: 12px;
+}
+.dish-name {
+font-size: 15px;
+font-weight: bold;
+color: #2c3e50;
+}
+.dish-desc {
+font-size: 12px;
+color: #666;
+margin-top: 2px;
+}
+.dish-price {
+font-size: 15px;
+font-weight: bold;
+color: #000;
+white-space: nowrap;
+}
+.coctel-prices {
+display: flex;
+gap: 10px;
+font-size: 13px;
+color: #444;
+}
+.coctel-prices span b {
+color: #4267B2;
+}
+</style>
 </head>
 <body>
-
-<div class="container">
-    <div class="logo">
-        <img src="MET_LOGO.png" alt="Logo Mariscos El Tiburón">
-    </div>
-    
-    <h1>MENÚ</h1>
-
-    <!-- ESPECIALIDADES -->
-    <h2>Especialidades</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>PLATILLO</th>
-                <th>PRECIO</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Mixiote de Mariscos</td>
-                <td><span class="price">$220.00</span></td>
-            </tr>
-            <tr>
-                <td>Alambre de Mariscos</td>
-                <td><span class="price">$200.00</span></td>
-            </tr>
-            <tr>
-                <td>Filete Empanizado</td>
-                <td><span class="price">$200.00</span></td>
-            </tr>
-        </tbody>
-    </table>
-
-    <!-- ENTRADAS -->
-    <h2>Entradas</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>PLATILLO</th>
-                <th>PRECIO</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Pescadillas (orden de 3)</td>
-                <td><span class="price">$50.00</span></td>
-            </tr>
-            <tr>
-                <td>Pescadito solo (1 pza.)</td>
-                <td><span class="price">$30.00</span></td>
-            </tr>
-            <tr>
-                <td>Pescado preparado (cilantro, cebolla y aguacate)</td>
-                <td><span class="price">$30.00</span></td>
-            </tr>
-            <tr>
-                <td>Consomé de camarón</td>
-                <td><span class="price">$40.00</span></td>
-            </tr>
-        </tbody>
-    </table>
-
-    <!-- CAMARONES -->
-    <h2>Camarones</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>PLATILLO</th>
-                <th>PRECIO</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Camarones Empanizados</td>
-                <td><span class="price">$220.00</span></td>
-            </tr>
-            <tr>
-                <td>Camarones a la Diabla</td>
-                <td><span class="price">$220.00</span></td>
-            </tr>
-            <tr>
-                <td>Camarones al mojo de ajo</td>
-                <td><span class="price">$220.00</span></td>
-            </tr>
-        </tbody>
-    </table>
-
-    <!-- COCTELES -->
-    <h2>Cocteles (Chico / Mediano / Grande)</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>PLATILLO</th>
-                <th>PRECIO (CH / MED / GDE)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Coctel de Camarón</td>
-                <td><span class="price">$70 / $130 / $190</span></td>
-            </tr>
-            <tr>
-                <td>Coctel de Pulpo</td>
-                <td><span class="price">$70 / $130 / $190</span></td>
-            </tr>
-            <tr>
-                <td>Coctel de Ostión</td>
-                <td><span class="price">$70 / $130 / $190</span></td>
-            </tr>
-            <tr>
-                <td>Coctel Campechano</td>
-                <td><span class="price">$70 / $130 / $190</span></td>
-            </tr>
-        </tbody>
-    </table>
-
-    <!-- MOJARRAS -->
-    <h2>Mojarras</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>PLATILLO</th>
-                <th>PRECIO</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Mojarra Frita</td>
-                <td><span class="price">S/T</span></td>
-            </tr>
-            <tr>
-                <td>Mojarra al mojo de ajo</td>
-                <td><span class="price">S/T</span></td>
-            </tr>
-        </tbody>
-    </table>
-
-    <!-- TOSTADAS -->
-    <h2>Tostadas</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>PLATILLO</th>
-                <th>PRECIO</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Tostada de Camarón natural</td>
-                <td><span class="price">$70.00</span></td>
-            </tr>
-            <tr>
-                <td>Tostada de Pulpo natural</td>
-                <td><span class="price">$70.00</span></td>
-            </tr>
-            <tr>
-                <td>Tostada Campechana</td>
-                <td><span class="price">$70.00</span></td>
-            </tr>
-            <tr>
-                <td>Tostada Ensalada de Camarón</td>
-                <td><span class="price">$65.00</span></td>
-            </tr>
-            <tr>
-                <td>Tostada Ceviche de Pescado</td>
-                <td><span class="price">$65.00</span></td>
-            </tr>
-            <tr>
-                <td>Tostada Ceviche de Pulpo</td>
-                <td><span class="price">$65.00</span></td>
-            </tr>
-        </tbody>
-    </table>
-
-    <!-- CALDOS Y SOPAS -->
-    <h2>Caldos y Sopas</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>PLATILLO</th>
-                <th>PRECIO</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Caldo de Camarón de cáscara</td>
-                <td><span class="price">$100.00</span></td>
-            </tr>
-            <tr>
-                <td>Caldo de Camarón pelado</td>
-                <td><span class="price">$110.00</span></td>
-            </tr>
-            <tr>
-                <td>Caldo de Pescado</td>
-                <td><span class="price">$100.00</span></td>
-            </tr>
-            <tr>
-                <td>Sopa de Mariscos</td>
-                <td><span class="price">$190.00</span></td>
-            </tr>
-            <tr>
-                <td>Caldo de Camarón y Pescado</td>
-                <td><span class="price">$120.00</span></td>
-            </tr>
-        </tbody>
-    </table>
-
-    <!-- EMPANADAS -->
-    <h2>Empanadas</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>PLATILLO</th>
-                <th>PRECIO</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Empanada de Camarón natural</td>
-                <td><span class="price">$70.00</span></td>
-            </tr>
-            <tr>
-                <td>Empanada de Pulpo natural</td>
-                <td><span class="price">$70.00</span></td>
-            </tr>
-            <tr>
-                <td>Empanada Campechana</td>
-                <td><span class="price">$70.00</span></td>
-            </tr>
-            <tr>
-                <td>Empanada de Ensalada de Camarón</td>
-                <td><span class="price">$65.00</span></td>
-            </tr>
-            <tr>
-                <td>Empanada de Ceviche de Pescado</td>
-                <td><span class="price">$65.00</span></td>
-            </tr>
-            <tr>
-                <td>Empanada de Ceviche de Pulpo</td>
-                <td><span class="price">$65.00</span></td>
-            </tr>
-        </tbody>
-    </table>
-
-    <!-- BEBIDAS -->
-    <h2>Bebidas</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>PLATILLO</th>
-                <th>PRECIO</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Refresco</td>
-                <td><span class="price">$30.00</span></td>
-            </tr>
-            <tr>
-                <td>Agua del día</td>
-                <td><span class="price">$40.00</span></td>
-            </tr>
-            <tr>
-                <td>Agua mineral preparada</td>
-                <td><span class="price">$40.00</span></td>
-            </tr>
-            <tr>
-                <td>Sangría preparada</td>
-                <td><span class="price">$40.00</span></td>
-            </tr>
-        </tbody>
-    </table>
-
-    <!-- UBICACIONES -->
-    <div class="locations-box">
-        <h3>DÍAS Y UBICACIONES</h3>
-        <p><strong>Martes:</strong> Tianguis de Cebadales (a la altura del corralón), Cuautitlán.</p>
-        <p><strong>Domingos:</strong> Calle Reforma con esquina en C. Xicoténcatl, Tultepec.</p>
-    </div>
-
-    <div class="footer-note">
-        Mariscos El Tiburón — ¡Buen provecho!
-    </div>
+<div class="menu-container">
+<div class="header">
+<div class="logo">
+<img src="MET_LOGO.png" alt="Logo Mariscos El Tiburón">
 </div>
-
+</div>
+<!-- ESPECIALIDADES -->
+<div class="category">
+<div class="category-header">
+<span class="category-icon">🥘</span>
+<h2 class="category-title">Especialidades</h2>
+</div>
+<div class="dish-item">
+<div class="dish-info"><div class="dish-name">MIXIOTE DE MARISCOS</div></div>
+<div class="dish-price">$ 220</div>
+</div>
+<div class="dish-item">
+<div class="dish-info"><div class="dish-name">ALAMBRE DE MARISCOS</div></div>
+<div class="dish-price">$ 200</div>
+</div>
+<div class="dish-item">
+<div class="dish-info"><div class="dish-name">FILETE EMPANIZADO</div></div>
+<div class="dish-price">$ 200</div>
+</div>
+</div>
+<!-- ENTRADAS -->
+<div class="category">
+<div class="category-header">
+<span class="category-icon">🥟</span>
+<h2 class="category-title">Entradas</h2>
+</div>
+<div class="dish-item">
+<div class="dish-info"><div class="dish-name">Pescadillas orden de (3)</div></div>
+<div class="dish-price">$ 50</div>
+</div>
+<div class="dish-item">
+<div class="dish-info"><div class="dish-name">Pescadito solo (1) pza.</div></div>
+<div class="dish-price">$ 30</div>
+</div>
+<div class="dish-item">
+<div class="dish-info">
+<div class="dish-name">Pescado preparado</div>
+<div class="dish-desc">(cilantro, cebolla y aguacate)</div>
+</div>
+<div class="dish-price">$ 30</div>
+</div>
+<div class="dish-item">
+<div class="dish-info"><div class="dish-name">Consomé de camarón</div></div>
+<div class="dish-price">$ 40</div>
+</div>
+</div>
+<!-- CAMARONES -->
+<div class="category">
+<div class="category-header">
+<span class="category-icon">🦐</span>
+<h2 class="category-title">Camarones</h2>
+</div>
+<div class="dish-item">
+<div class="dish-info"><div class="dish-name">Empanizados</div></div>
+<div class="dish-price">$ 220</div>
+</div>
+<div class="dish-item">
+<div class="dish-info"><div class="dish-name">A la Diabla</div></div>
+<div class="dish-price">$ 220</div>
+</div>
+<div class="dish-item">
+<div class="dish-info"><div class="dish-name">Al mojo de ajo</div></div>
+<div class="dish-price">$ 220</div>
+</div>
+</div>
+<!-- COCTELES -->
+<div class="category">
+<div class="category-header">
+<span class="category-icon">🍹</span>
+<h2 class="category-title">Cocteles</h2>
+</div>
+<div class="dish-item">
+<div class="dish-info"><div class="dish-name">Camarón</div></div>
+<div class="coctel-prices">
+<span>CH <b>$ 70</b></span>
+<span>MED <b>$ 130</b></span>
+<span>GDE <b>$ 190</b></span>
+</div>
+</div>
+<div class="dish-item">
+<div class="dish-info"><div class="dish-name">Pulpo</div></div>
+<div class="coctel-prices">
+<span>CH <b>$ 70</b></span>
+<span>MED <b>$ 130</b></span>
+<span>GDE <b>$ 190</b></span>
+</div>
+</div>
+<div class="dish-item">
+<div class="dish-info"><div class="dish-name">Ostión</div></div>
+<div class="coctel-prices">
+<span>CH <b>$ 70</b></span>
+<span>MED <b>$ 130</b></span>
+<span>GDE <b>$ 190</b></span>
+</div>
+</div>
+<div class="dish-item">
+<div class="dish-info"><div class="dish-name">Campechano</div></div>
+<div class="coctel-prices">
+<span>CH <b>$ 70</b></span>
+<span>MED <b>$ 130</b></span>
+<span>GDE <b>$ 190</b></span>
+</div>
+</div>
+</div>
+<!-- MOJARRAS -->
+<div class="category">
+<div class="category-header">
+<span class="category-icon">🐟</span>
+<h2 class="category-title">Mojarras</h2>
+</div>
+<div class="dish-item">
+<div class="dish-info"><div class="dish-name">Frita</div></div>
+<div class="dish-price">$ S/T</div>
+</div>
+<div class="dish-item">
+<div class="dish-info"><div class="dish-name">Al mojo de ajo</div></div>
+<div class="dish-price"></div>
+</div>
+</div>
+<!-- TOSTADAS -->
+<div class="category">
+<div class="category-header">
+<span class="category-icon">🌮</span>
+<h2 class="category-title">Tostadas</h2>
+</div>
+<div class="dish-item">
+<div class="dish-info"><div class="dish-name">Camarón natural</div></div>
+<div class="dish-price">$ 70</div>
+</div>
+<div class="dish-item">
+<div class="dish-info"><div class="dish-name">Pulpo natural</div></div>
+<div class="dish-price">$ 70</div>
+</div>
+<div class="dish-item">
+<div class="dish-info"><div class="dish-name">Campechana</div></div>
+<div class="dish-price">$ 70</div>
+</div>
+<div class="dish-item">
+<div class="dish-info"><div class="dish-name">Ensalada de Camaron</div></div>
+<div class="dish-price">$ 65</div>
+</div>
+<div class="dish-item">
+<div class="dish-info"><div class="dish-name">Ceviche de Pescado</div></div>
+<div class="dish-price">$ 65</div>
+</div>
+<div class="dish-item">
+<div class="dish-info"><div class="dish-name">Ceviche de Pulpo</div></div>
+<div class="dish-price">$ 65</div>
+</div>
+</div>
+<!-- CALDOS -->
+<div class="category">
+<div class="category-header">
+<span class="category-icon">🍲</span>
+<h2 class="category-title">Caldos</h2>
+</div>
+<div class="dish-item">
+<div class="dish-info"><div class="dish-name">Camarón de cascara</div></div>
+<div class="dish-price">$ 100</div>
+</div>
+<div class="dish-item">
+<div class="dish-info"><div class="dish-name">Camarón pelado</div></div>
+<div class="dish-price">$ 110</div>
+</div>
+<div class="dish-item">
+<div class="dish-info"><div class="dish-name">Pescado</div></div>
+<div class="dish-price">$ 100</div>
+</div>
+<div class="dish-item">
+<div class="dish-info"><div class="dish-name">Sopa de Mariscos</div></div>
+<div class="dish-price">$ 190</div>
+</div>
+<div class="dish-item">
+<div class="dish-info"><div class="dish-name">Camarón y Pescado</div></div>
+<div class="dish-price">$ 120</div>
+</div>
+</div>
+<!-- EMPANADAS -->
+<div class="category">
+<div class="category-header">
+<span class="category-icon">🥟</span>
+<h2 class="category-title">Empanadas</h2>
+</div>
+<div class="dish-item">
+<div class="dish-info"><div class="dish-name">Camarón natural</div></div>
+<div class="dish-price">$ 70</div>
+</div>
+<div class="dish-item">
+<div class="dish-info"><div class="dish-name">Pulpo natural</div></div>
+<div class="dish-price">$ 70</div>
+</div>
+<div class="dish-item">
+<div class="dish-info"><div class="dish-name">Campechana</div></div>
+<div class="dish-price">$ 70</div>
+</div>
+<div class="dish-item">
+<div class="dish-info"><div class="dish-name">Ensalada de Camaron</div></div>
+<div class="dish-price">$ 65</div>
+</div>
+<div class="dish-item">
+<div class="dish-info"><div class="dish-name">Ceviche de Pescado</div></div>
+<div class="dish-price">$ 65</div>
+</div>
+<div class="dish-item">
+<div class="dish-info"><div class="dish-name">Ceviche de Pulpo</div></div>
+<div class="dish-price">$ 65</div>
+</div>
+</div>
+<!-- BEBIDAS -->
+<div class="category">
+<div class="category-header">
+<span class="category-icon">🍾</span>
+<h2 class="category-title">Bebidas</h2>
+</div>
+<div class="dish-item">
+<div class="dish-info"><div class="dish-name">Refresco</div></div>
+<div class="dish-price">$ 30</div>
+</div>
+<div class="dish-item">
+<div class="dish-info"><div class="dish-name">Agua del dia</div></div>
+<div class="dish-price">$ 40</div>
+</div>
+<div class="dish-item">
+<div class="dish-info"><div class="dish-name">Agua mineral preparada</div></div>
+<div class="dish-price">$ 40</div>
+</div>
+<div class="dish-item">
+<div class="dish-info"><div class="dish-name">Sangria preparada</div></div>
+<div class="dish-price">$ 40</div>
+</div>
+</div>
+</div>
 </body>
 </html>

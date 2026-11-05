@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariscos El Tiburón</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            width: 100%;
+            background-color: #f0f0f0;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        nav a {
+            color: #000000;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #0077b6;
+        }
+        nav a i {
+            font-size: 18px;
+            color: #000000;
+        }
+        .logo-img {
+            max-width: 250px;
+            height: auto;
+            border-radius: 50%;
+        }
+        main {
+            width: 100%;
+            max-width: 420px;
+            padding: 40px 20px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: #000000;
+            text-align: center;
+            word-wrap: break-word;
+            line-height: 1.1;
+        }
+        .maps-subtitle {
+            font-size: 16px;
+            color: #666666;
+            margin-bottom: 20px;
+            display: block; 
+            margin-top: 10px;
+            text-align: center;
+        }
+        .img-container {
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        .maps-img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            display: block;
+        }
+        .maps-img:hover {
+            transform: scale(1.02);
+        }
+
+        /* Ajustes para versión móvil */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+                padding: 20px;
+            }
+            .logo-img {
+                max-width: 120px;
+            }
+            nav {
+                justify-content: center;
+                width: 100%;
+            }
+            h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div>
+        <a href="#">
+            <img src="MET_LOGO.png" alt="Logo Mariscos El Tiburón" class="logo-img">
+        </a>
+    </div>
+    <nav>
+        <a href="MET_PCT.html">
+            <i class="fas fa-credit-card"></i> Pago con Transferencia
+        </a>
+        <a href="https://wa.me/5545584994" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="#" onclick="return false;">
+            <i class="fab fa-facebook"></i> Facebook
+        </a>
+    </nav>
+</header>
+
+<main>
+    <h1>Mariscos El Tiburón</h1>
+
+    <div class="img-container">
+        <a href="AGREGAR ENLACE" target="_blank" rel="noopener noreferrer">
+            <img src="GOOGLE.jpg" alt="Califícanos en Google Maps" class="maps-img">
+        </a>
+    </div>
+    <div class="maps-subtitle">Haz clic en la imagen</div>
+</main>
+
+</body>
+</html>

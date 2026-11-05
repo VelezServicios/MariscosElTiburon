@@ -51,32 +51,51 @@
             color: #000000;
         }
         .logo-img {
-            max-width: 250px;
+            max-width: 150px;
             height: auto;
             border-radius: 50%;
         }
         main {
             width: 100%;
-            max-width: 420px;
+            max-width: 900px;
             padding: 40px 20px;
             text-align: center;
             box-sizing: border-box;
         }
         h1 {
-            font-size: 40px;
+            font-size: 36px;
             font-weight: bold;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
             color: #000000;
             text-align: center;
-            word-wrap: break-word;
-            line-height: 1.1;
         }
-        .maps-subtitle {
+        .branches-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .branch-card {
+            flex: 1;
+            min-width: 280px;
+            max-width: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .branch-title {
             font-size: 16px;
             color: #666666;
-            margin-bottom: 20px;
-            display: block; 
+            margin-bottom: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .maps-subtitle {
+            font-size: 14px;
+            color: #666666;
             margin-top: 10px;
+            display: block; 
             text-align: center;
         }
         .img-container {
@@ -104,14 +123,22 @@
                 padding: 20px;
             }
             .logo-img {
-                max-width: 120px;
+                max-width: 100px;
             }
             nav {
                 justify-content: center;
                 width: 100%;
+                flex-wrap: wrap;
+                gap: 15px;
             }
             h1 {
-                font-size: 28px;
+                font-size: 24px;
+                margin-bottom: 25px;
+            }
+            .branches-container {
+                flex-direction: column;
+                align-items: center;
+                gap: 35px;
             }
         }
     </style>
@@ -128,6 +155,9 @@
         <a href="MET_PCT.html">
             <i class="fas fa-credit-card"></i> Pago con Transferencia
         </a>
+        <a href="AGREGAR_ENLACE_MENU" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-utensils"></i> Menú
+        </a>
         <a href="https://wa.me/5545584994" target="_blank" rel="noopener noreferrer">
             <i class="fab fa-whatsapp"></i> WhatsApp
         </a>
@@ -140,12 +170,29 @@
 <main>
     <h1>Mariscos El Tiburón</h1>
 
-    <div class="img-container">
-        <a href="AGREGAR ENLACE" target="_blank" rel="noopener noreferrer">
-            <img src="MET_GOOGLE.jpg" alt="Califícanos en Google Maps" class="maps-img">
-        </a>
+    <div class="branches-container">
+        <!-- Sucursal Tultepec (Izquierda en PC, Arriba en Móvil) -->
+        <div class="branch-card">
+            <div class="branch-title">Sucursal Tultepec</div>
+            <div class="img-container">
+                <a href="MET_GOOGLE_1.jpg" target="_blank" rel="noopener noreferrer">
+                    <img src="MET_GOOGLE_1.jpg" alt="Califícanos en Google Maps - Tultepec" class="maps-img">
+                </a>
+            </div>
+            <div class="maps-subtitle">Haz clic en la imagen</div>
+        </div>
+
+        <!-- Sucursal Cuautitlán (Derecha en PC, Abajo en Móvil) -->
+        <div class="branch-card">
+            <div class="branch-title">Sucursal Cuautitlán</div>
+            <div class="img-container">
+                <a href="MET_GOOGLE_2.jpg" target="_blank" rel="noopener noreferrer">
+                    <img src="MET_GOOGLE_2.jpg" alt="Califícanos en Google Maps - Cuautitlán" class="maps-img">
+                </a>
+            </div>
+            <div class="maps-subtitle">Haz clic en la imagen</div>
+        </div>
     </div>
-    <div class="maps-subtitle">Haz clic en la imagen</div>
 </main>
 
 </body>

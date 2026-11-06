@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mariscos El Tiburón</title>
+    <title>Sucursal Tultepec - Mariscos El Tiburón</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body {
@@ -28,32 +28,6 @@
             border-bottom: 1px solid #e0e0e0;
             gap: 20px;
         }
-        nav {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 25px;
-            width: 100%;
-        }
-        nav a {
-            color: #000000;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 8px;
-            transition: color 0.3s;
-            text-align: center;
-        }
-        nav a:hover {
-            color: #0077b6;
-        }
-        nav a i {
-            font-size: 24px;
-            color: #000000;
-        }
         .logo-img {
             max-width: 250px;
             height: auto;
@@ -65,53 +39,58 @@
             padding: 40px 20px;
             text-align: center;
             box-sizing: border-box;
-        }
-        .branches-container {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            flex-wrap: wrap;
-            margin-bottom: 40px;
-        }
-        .branch-card {
-            flex: 1;
-            min-width: 280px;
-            max-width: 350px;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-        .branch-title {
-            font-size: 22px;
+        h1 {
+            font-size: 28px;
             color: #333333;
-            margin-bottom: 15px;
+            margin-bottom: 30px;
             font-weight: bold;
             text-transform: uppercase;
-            letter-spacing: 1px;
         }
-        .maps-subtitle {
-            font-size: 16px;
-            color: #666666;
-            margin-top: 15px;
-            display: block; 
-            text-align: center;
-            font-weight: 500;
+        .btn-maps {
+            background-color: #0077b6;
+            color: #ffffff;
+            padding: 20px 40px;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,119,182,0.3);
+            transition: background-color 0.3s ease, transform 0.2s;
+            margin-bottom: 40px;
+            display: inline-block;
         }
-        .img-container {
-            width: 100%;
-            max-width: 300px;
-            margin: 0 auto;
-        }
-        .maps-img {
-            width: 100%;
-            height: auto;
-            border-radius: 12px;
-            transition: transform 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            display: block;
-        }
-        .maps-img:hover {
+        .btn-maps:hover {
+            background-color: #005f9e;
             transform: scale(1.02);
+        }
+        .map-section {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .map-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333333;
+        }
+        .map-container {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
         }
 
         /* Ajustes para versión móvil */
@@ -122,17 +101,15 @@
             .logo-img {
                 max-width: 200px;
             }
-            nav {
-                gap: 15px;
+            h1 {
+                font-size: 24px;
             }
-            nav a {
-                font-size: 16px;
+            .btn-maps {
+                padding: 15px 30px;
+                font-size: 18px;
             }
-            nav a i {
-                font-size: 20px;
-            }
-            .branch-title {
-                font-size: 20px;
+            .map-container {
+                height: 300px;
             }
         }
     </style>
@@ -141,50 +118,26 @@
 
 <header>
     <div>
-        <a href="#">
+        <a href="index.html">
             <img src="MET_LOGO.png" alt="Logo Mariscos El Tiburón" class="logo-img">
         </a>
     </div>
-    <nav>
-        <a href="MET_PCT.html">
-            <i class="fas fa-credit-card"></i> Pago con Transferencia
-        </a>
-        <a href="MET_MENU.html">
-            <i class="fas fa-utensils"></i> Menú
-        </a>
-        <a href="https://wa.me/5545584994" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-whatsapp"></i> WhatsApp
-        </a>
-        <a href="#" onclick="return false;">
-            <i class="fab fa-facebook"></i> Facebook
-        </a>
-    </nav>
 </header>
 
 <main>
-    <div class="branches-container">
-        <!-- Sucursal Tultepec -->
-        <div class="branch-card">
-            <div class="branch-title">Sucursal Tultepec</div>
-            <div class="img-container">
-                <a href="MET_GMAPS_TULTE.html">
-                    <img src="MET_GOOGLE_1.jpg" alt="Califícanos en Google Maps - Tultepec" class="maps-img">
-                </a>
-            </div>
-            <span class="maps-subtitle">Haz clic en la imagen</span>
-        </div>
+    <h1>Sucursal Tultepec</h1>
+    
+    <a href="https://maps.google.com/?cid=YOUR_PLACE_ID_HERE" class="btn-maps" target="_blank" rel="noopener noreferrer">
+        Calificar en Google Maps
+    </a>
 
-        <!-- Sucursal Cuautitlán -->
-        <div class="branch-card">
-            <div class="branch-title">Sucursal Cuautitlán</div>
-            <div class="img-container">
-                <a href="MET_GMAPS_CUAUTI.html">
-                    <img src="MET_GOOGLE_2.jpg" alt="Califícanos en Google Maps - Cuautitlán" class="maps-img">
-                </a>
-            </div>
-            <span class="maps-subtitle">Haz clic en la imagen</span>
+    <section class="map-section">
+        <h2 class="map-title">Cómo llegar</h2>
+        <div class="map-container">
+            <!-- Reemplaza el src con el iframe específico de la sucursal de Tultepec -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3756.9999999999995!2d-99.155!3d19.680!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDQwJzQ4LjAiTiA5 " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-    </div>
+    </section>
 </main>
 
 </body>

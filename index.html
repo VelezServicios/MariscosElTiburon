@@ -20,39 +20,42 @@
         header {
             width: 100%;
             background-color: #f0f0f0;
-            padding: 15px 30px;
+            padding: 20px;
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             align-items: center;
             box-sizing: border-box;
             border-bottom: 1px solid #e0e0e0;
+            gap: 20px;
         }
         nav {
             display: flex;
-            gap: 20px;
-            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            width: 100%;
         }
         nav a {
             color: #000000;
             text-decoration: none;
-            font-size: 14px;
+            font-size: 18px;
             font-weight: bold;
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 5px;
+            gap: 8px;
             transition: color 0.3s;
-            white-space: nowrap;
+            text-align: center;
         }
         nav a:hover {
             color: #0077b6;
         }
         nav a i {
-            font-size: 18px;
+            font-size: 24px;
             color: #000000;
         }
         .logo-img {
-            max-width: 200px;
+            max-width: 250px;
             height: auto;
             border-radius: 50%;
         }
@@ -68,6 +71,7 @@
             justify-content: center;
             gap: 40px;
             flex-wrap: wrap;
+            margin-bottom: 40px;
         }
         .branch-card {
             flex: 1;
@@ -78,19 +82,20 @@
             align-items: center;
         }
         .branch-title {
-            font-size: 16px;
-            color: #666666;
-            margin-bottom: 10px;
-            font-weight: 600;
+            font-size: 22px;
+            color: #333333;
+            margin-bottom: 15px;
+            font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
         .maps-subtitle {
-            font-size: 14px;
+            font-size: 16px;
             color: #666666;
-            margin-top: 10px;
+            margin-top: 15px;
             display: block; 
             text-align: center;
+            font-weight: 500;
         }
         .img-container {
             width: 100%;
@@ -112,31 +117,22 @@
         /* Ajustes para versión móvil */
         @media (max-width: 768px) {
             header {
-                flex-direction: column;
-                gap: 15px;
                 padding: 15px 10px;
             }
             .logo-img {
-                max-width: 180px;
+                max-width: 200px;
             }
             nav {
-                justify-content: space-around;
-                width: 100%;
-                flex-wrap: nowrap;
-                gap: 8px;
-                overflow-x: auto;
-                padding: 5px 0;
+                gap: 15px;
             }
             nav a {
-                font-size: 11px;
-            }
-            nav a i {
                 font-size: 16px;
             }
-            .branches-container {
-                flex-direction: column;
-                align-items: center;
-                gap: 35px;
+            nav a i {
+                font-size: 20px;
+            }
+            .branch-title {
+                font-size: 20px;
             }
         }
     </style>
@@ -167,26 +163,26 @@
 
 <main>
     <div class="branches-container">
-        <!-- Sucursal Tultepec (Izquierda en PC, Arriba en Móvil) -->
+        <!-- Sucursal Tultepec -->
         <div class="branch-card">
             <div class="branch-title">Sucursal Tultepec</div>
             <div class="img-container">
-                <a href="MET_GOOGLE_1.jpg" target="_blank" rel="noopener noreferrer">
+                <a href="MET_GMAPS_TULTE.html">
                     <img src="MET_GOOGLE_1.jpg" alt="Califícanos en Google Maps - Tultepec" class="maps-img">
                 </a>
             </div>
-            <div class="maps-subtitle">Haz clic en la imagen</div>
+            <span class="maps-subtitle">Haz clic en la imagen</span>
         </div>
 
-        <!-- Sucursal Cuautitlán (Derecha en PC, Abajo en Móvil) -->
+        <!-- Sucursal Cuautitlán -->
         <div class="branch-card">
             <div class="branch-title">Sucursal Cuautitlán</div>
             <div class="img-container">
-                <a href="MET_GOOGLE_2.jpg" target="_blank" rel="noopener noreferrer">
+                <a href="MET_GMAPS_CUAUTI.html">
                     <img src="MET_GOOGLE_2.jpg" alt="Califícanos en Google Maps - Cuautitlán" class="maps-img">
                 </a>
             </div>
-            <div class="maps-subtitle">Haz clic en la imagen</div>
+            <span class="maps-subtitle">Haz clic en la imagen</span>
         </div>
     </div>
 </main>

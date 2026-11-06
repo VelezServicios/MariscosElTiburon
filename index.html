@@ -42,6 +42,7 @@
             align-items: center;
             gap: 5px;
             transition: color 0.3s;
+            white-space: nowrap;
         }
         nav a:hover {
             color: #0077b6;
@@ -119,17 +120,25 @@
         @media (max-width: 768px) {
             header {
                 flex-direction: column;
-                gap: 20px;
-                padding: 20px;
+                gap: 15px;
+                padding: 15px 10px;
             }
             .logo-img {
-                max-width: 200px;
+                max-width: 160px;
             }
             nav {
-                justify-content: center;
+                justify-content: space-around;
                 width: 100%;
-                flex-wrap: wrap;
-                gap: 15px;
+                flex-wrap: nowrap;
+                gap: 8px;
+                overflow-x: auto;
+                padding: 5px 0;
+            }
+            nav a {
+                font-size: 11px;
+            }
+            nav a i {
+                font-size: 16px;
             }
             h1 {
                 font-size: 24px;
@@ -155,7 +164,7 @@
         <a href="MET_PCT.html">
             <i class="fas fa-credit-card"></i> Pago con Transferencia
         </a>
-        <a href="MET_MENU.html" target="_blank" rel="noopener noreferrer">
+        <a href="MET_MENU.html">
             <i class="fas fa-utensils"></i> Menú
         </a>
         <a href="https://wa.me/5545584994" target="_blank" rel="noopener noreferrer">

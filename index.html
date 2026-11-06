@@ -20,20 +20,18 @@
         header {
             width: 100%;
             background-color: #f0f0f0;
-            padding: 20px;
+            padding: 20px 40px;
             display: flex;
-            flex-direction: column;
+            justify-content: space-between;
             align-items: center;
             box-sizing: border-box;
             border-bottom: 1px solid #e0e0e0;
-            gap: 20px;
         }
         nav {
             display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
             gap: 25px;
-            width: 100%;
+            align-items: center;
+            flex-wrap: nowrap;
         }
         nav a {
             color: #000000;
@@ -46,6 +44,7 @@
             gap: 8px;
             transition: color 0.3s;
             text-align: center;
+            white-space: nowrap;
         }
         nav a:hover {
             color: #0077b6;
@@ -55,7 +54,7 @@
             color: #000000;
         }
         .logo-img {
-            max-width: 250px;
+            max-width: 200px;
             height: auto;
             border-radius: 50%;
         }
@@ -117,19 +116,23 @@
         /* Ajustes para versión móvil */
         @media (max-width: 768px) {
             header {
+                flex-direction: column;
+                gap: 15px;
                 padding: 15px 10px;
             }
             .logo-img {
-                max-width: 200px;
+                max-width: 140px;
             }
             nav {
+                justify-content: center;
+                width: 100%;
                 gap: 15px;
             }
             nav a {
-                font-size: 16px;
+                font-size: 13px;
             }
             nav a i {
-                font-size: 20px;
+                font-size: 18px;
             }
             .branch-title {
                 font-size: 20px;
@@ -147,7 +150,7 @@
     </div>
     <nav>
         <a href="MET_PCT.html">
-            <i class="fas fa-credit-card"></i> Pago con Transferencia
+            <i class="fas fa-credit-card"></i> Pago con<br>Transferencia
         </a>
         <a href="MET_MENU.html">
             <i class="fas fa-utensils"></i> Menú

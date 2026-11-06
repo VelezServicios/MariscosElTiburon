@@ -1,1 +1,191 @@
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3756.534899896209!2d-99.12101770000001!3d19.689838399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f500760b8247%3A0xd4c87e36813ce3d5!2sMariscos%20El%20Tibur%C3%B3n%20Tultepec!5e0!3m2!1ses-419!2smx!4v1793993479372!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariscos El Tiburón</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            width: 100%;
+            background-color: #f0f0f0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box;
+            border-bottom: 1px solid #e0e0e0;
+            gap: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            width: 100%;
+        }
+        nav a {
+            color: #000000;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.3s;
+            text-align: center;
+        }
+        nav a:hover {
+            color: #0077b6;
+        }
+        nav a i {
+            font-size: 24px;
+            color: #000000;
+        }
+        .logo-img {
+            max-width: 250px;
+            height: auto;
+            border-radius: 50%;
+        }
+        main {
+            width: 100%;
+            max-width: 900px;
+            padding: 40px 20px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .branches-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        .branch-card {
+            flex: 1;
+            min-width: 280px;
+            max-width: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .branch-title {
+            font-size: 22px;
+            color: #333333;
+            margin-bottom: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .maps-subtitle {
+            font-size: 16px;
+            color: #666666;
+            margin-top: 15px;
+            display: block; 
+            text-align: center;
+            font-weight: 500;
+        }
+        .img-container {
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        .maps-img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            display: block;
+        }
+        .maps-img:hover {
+            transform: scale(1.02);
+        }
+
+        /* Ajustes para versión móvil */
+        @media (max-width: 768px) {
+            header {
+                padding: 15px 10px;
+            }
+            .logo-img {
+                max-width: 200px;
+            }
+            nav {
+                gap: 15px;
+            }
+            nav a {
+                font-size: 16px;
+            }
+            nav a i {
+                font-size: 20px;
+            }
+            .branch-title {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div>
+        <a href="#">
+            <img src="MET_LOGO.png" alt="Logo Mariscos El Tiburón" class="logo-img">
+        </a>
+    </div>
+    <nav>
+        <a href="MET_PCT.html">
+            <i class="fas fa-credit-card"></i> Pago con Transferencia
+        </a>
+        <a href="MET_MENU.html">
+            <i class="fas fa-utensils"></i> Menú
+        </a>
+        <a href="https://wa.me/5545584994" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="#" onclick="return false;">
+            <i class="fab fa-facebook"></i> Facebook
+        </a>
+    </nav>
+</header>
+
+<main>
+    <div class="branches-container">
+        <!-- Sucursal Tultepec -->
+        <div class="branch-card">
+            <div class="branch-title">Sucursal Tultepec</div>
+            <div class="img-container">
+                <a href="MET_GMAPS_TULTE.html">
+                    <img src="MET_GOOGLE_1.jpg" alt="Califícanos en Google Maps - Tultepec" class="maps-img">
+                </a>
+            </div>
+            <span class="maps-subtitle">Haz clic en la imagen</span>
+        </div>
+
+        <!-- Sucursal Cuautitlán -->
+        <div class="branch-card">
+            <div class="branch-title">Sucursal Cuautitlán</div>
+            <div class="img-container">
+                <a href="MET_GMAPS_CUAUTI.html">
+                    <img src="MET_GOOGLE_2.jpg" alt="Califícanos en Google Maps - Cuautitlán" class="maps-img">
+                </a>
+            </div>
+            <span class="maps-subtitle">Haz clic en la imagen</span>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>

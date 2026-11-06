@@ -1,1 +1,143 @@
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17872.39328903176!2d-99.18562096772081!3d19.661135426573342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f5005d9875b1%3A0xb2e73c30dd2ca66e!2sMariscos%20El%20Tibur%C3%B3n%20Cuautitl%C3%A1n!5e0!3m2!1ses-419!2smx!4v1793994118510!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sucursal Cuautitlán - Mariscos El Tiburón</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            width: 100%;
+            background-color: #f0f0f0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box;
+            border-bottom: 1px solid #e0e0e0;
+            gap: 20px;
+        }
+        .logo-img {
+            max-width: 250px;
+            height: auto;
+            border-radius: 50%;
+        }
+        main {
+            width: 100%;
+            max-width: 900px;
+            padding: 40px 20px;
+            text-align: center;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            font-size: 28px;
+            color: #333333;
+            margin-bottom: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .btn-maps {
+            background-color: #0077b6;
+            color: #ffffff;
+            padding: 20px 40px;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,119,182,0.3);
+            transition: background-color 0.3s ease, transform 0.2s;
+            margin-bottom: 40px;
+            display: inline-block;
+        }
+        .btn-maps:hover {
+            background-color: #005f9e;
+            transform: scale(1.02);
+        }
+        .map-section {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .map-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333333;
+        }
+        .map-container {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Ajustes para versión móvil */
+        @media (max-width: 768px) {
+            header {
+                padding: 15px 10px;
+            }
+            .logo-img {
+                max-width: 200px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .btn-maps {
+                padding: 15px 30px;
+                font-size: 18px;
+            }
+            .map-container {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div>
+        <a href="index.html">
+            <img src="MET_LOGO.png" alt="Logo Mariscos El Tiburón" class="logo-img">
+        </a>
+    </div>
+</header>
+
+<main>
+    <h1>Sucursal Cuautitlán</h1>
+    
+    <a href="https://maps.google.com/?cid=YOUR_PLACE_ID_HERE" class="btn-maps" target="_blank" rel="noopener noreferrer">
+        Calificar en Google Maps
+    </a>
+
+    <section class="map-section">
+        <h2 class="map-title">Cómo llegar</h2>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17872.39328903176!2d-99.18562096772081!3d19.661135426573342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f5005d9875b1%3A0xb2e73c30dd2ca66e!2sMariscos%20El%20Tibur%C3%B3n%20Cuautitl%C3%A1n!5e0!3m2!1ses-419!2smx!4v1793994118510!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>

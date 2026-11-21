@@ -17,6 +17,57 @@
             flex-direction: column;
             align-items: center;
         }
+        /* Estilos del anuncio emergente */
+        #welcome-ad-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.85);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            opacity: 1;
+            transition: opacity 0.5s ease;
+        }
+        .ad-modal {
+            position: relative;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 16px;
+            border: 1px solid #e0e0e0;
+            max-width: 450px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        .ad-timer {
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            font-size: 14px;
+            color: #666666;
+            font-weight: bold;
+            opacity: 0.4;
+        }
+        .ad-image-link {
+            display: block;
+            margin-top: 25px;
+        }
+        .ad-banner-img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .ad-banner-img:hover {
+            transform: scale(1.02);
+        }
+
+        /* Estilos generales de la página */
         header {
             width: 100%;
             background-color: #f0f0f0;
@@ -142,6 +193,16 @@
 </head>
 <body>
 
+<div id="welcome-ad-overlay">
+    <div class="ad-modal">
+        <div class="ad-timer" id="ad-timer-text">Cierra en 8s</div>
+        
+        <a href="https://wa.me/5666140182" class="ad-image-link" target="_blank" rel="noopener noreferrer">
+            <img src="VELEZ_AD.jpg" alt="Anuncio Promocional" class="ad-banner-img">
+        </a>
+    </div>
+</div>
+
 <header>
     <div>
         <a href="#">
@@ -189,6 +250,30 @@
         </div>
     </div>
 </main>
+
+<script>
+    let timeLeft = 8;
+    const timerText = document.getElementById('ad-timer-text');
+    const adOverlay = document.getElementById('welcome-ad-overlay');
+
+    function closeAd() {
+        adOverlay.style.opacity = '0';
+        setTimeout(() => {
+            adOverlay.style.display = 'none';
+        }, 500);
+    }
+
+    const countdown = setInterval(() => {
+        timeLeft--;
+        if (timeLeft > 0) {
+            timerText.innerText = `Cierra en ${timeLeft}s`;
+        } else {
+            timerText.innerText = '';
+            clearInterval(countdown);
+            closeAd();
+        }
+    }, 1000);
+</script>
 
 </body>
 </html>
